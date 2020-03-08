@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Animation 2</title>
+</head>
+<body>
+<canvas id = "canvas" width = "320" height = "480"></canvas>
+<script>
+document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var fon = new Image();
+fon.src = "fon.jpg";
+var x = 0;
+var y = 0;
+function game(){
+x = Math.floor(Math.random()*(250-0))+0;
+y = Math.floor(Math.random()*(185-0))+0;
+console.log(x,y);
+ctx.drawImage(fon,x,y,10,10,x,y,10,10);
+}
+setInterval(game,20);
+</script>
+</body>
+</html>
